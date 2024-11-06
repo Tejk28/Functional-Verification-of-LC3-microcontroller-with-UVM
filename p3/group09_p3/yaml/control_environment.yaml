@@ -1,0 +1,36 @@
+uvmf:
+  environments:
+    "control" :
+      agents :
+        - name: "control_in_agent_inst" 
+          type: "control_in"
+          initiator_responder: "INITIATOR"
+        - name: "control_out_agent_inst"
+          type: "control_out"
+          initiator_responder: "RESPONDER"
+      analysis_components :
+        - name: "control_predictor_inst"
+          type: "control_predictor"
+      scoreboards : 
+        - name: "control_scoreboard_inst"
+          sb_type: "uvmf_in_order_race_scoreboard"
+          trans_type: "control_out_transaction"
+      tlm_connections :
+        - driver:   "control_in_agent_inst.monitored_ap"
+          receiver: "control_predictor_inst.analysis_export"
+        - driver:   "control_predictor_inst.control_predictor_inst_ap"
+          receiver: "control_scoreboard_inst.expected_analysis_export"
+        - driver:   "control_out_agent_inst.monitored_ap"
+          receiver: "control_scoreboard_inst.actual_analysis_export"
+      imports:
+        - name: "lc3_prediction_pkg"
+  util_components:
+    "control_predictor" :
+      type: "predictor"
+      analysis_exports :
+        - name: "analysis_export"
+          type: "control_in_transaction"
+      analysis_ports :
+        - name: "control_predictor_inst_ap"
+          type: "control_out_transaction"
+

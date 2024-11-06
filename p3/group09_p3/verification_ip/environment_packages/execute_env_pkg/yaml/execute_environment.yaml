@@ -1,0 +1,38 @@
+uvmf:
+  environments:
+    execute:
+      agents:
+      - initiator_responder: INITIATOR
+        name: execute_agent_in
+        type: execute_in
+      - initiator_responder: RESPONDER
+        name: execute_agent_out
+        type: execute_out
+      analysis_components:
+      - name: execute_pred
+        parameters: []
+        type: execute_predictor
+      analysis_exports: []
+      analysis_ports: []
+      config_constraints: []
+      config_vars: []
+      existing_library_component: 'True'
+      hvl_pkg_parameters: []
+      non_uvmf_components: []
+      parameters: []
+      qvip_memory_agents: []
+      scoreboards:
+      - name: execute_scrbd
+        sb_type: uvmf_in_order_race_scoreboard
+        trans_type: execute_out_transaction
+      subenvs: []
+      tlm_connections:
+      - driver: execute_agent_in.monitored_ap
+        receiver: execute_pred.analysis_export
+        validate: 'True'
+      - driver: execute_pred.execute_pred_ap
+        receiver: execute_scrbd.expected_analysis_export
+        validate: 'True'
+      - driver: execute_agent_out.monitored_ap
+        receiver: execute_scrbd.actual_analysis_export
+        validate: 'True'

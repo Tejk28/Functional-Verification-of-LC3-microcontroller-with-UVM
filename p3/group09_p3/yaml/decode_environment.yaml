@@ -1,0 +1,34 @@
+uvmf:
+  environments:
+    "decode" :
+      agents:
+      - initiator_responder: "INITIATOR"
+        name: "dec_agn_in"
+        type: "decode_in"
+      - initiator_responder: "RESPONDER"
+        name: "dec_agn_out"
+        type: "decode_out"
+      analysis_components :
+        - name: "dec_pred"
+          type: "decode_predictor"
+      scoreboards : 
+        - name: "dec_scrbd"
+          sb_type: "uvmf_in_order_race_scoreboard"
+          trans_type: "decode_out_transaction"
+      tlm_connections :
+        - driver:   "dec_agn_in.monitored_ap"
+          receiver: "dec_pred.analysis_export"
+        - driver:   "dec_pred.dec_pred_ap"
+          receiver: "dec_scrbd.expected_analysis_export"
+        - driver:   "dec_agn_out.monitored_ap"
+          receiver: "dec_scrbd.actual_analysis_export"
+
+  util_components:
+    "decode_predictor" :  
+      type: "predictor"
+      analysis_exports :
+        - name: "analysis_export"
+          type: "decode_in_transaction"
+      analysis_ports : 
+        - name: "dec_pred_ap"
+          type: "decode_out_transaction"

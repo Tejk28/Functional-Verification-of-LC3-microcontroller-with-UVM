@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Allan Crone</Author>
+  <LastAuthor>K ROHAN REDDY</LastAuthor>
+  <Created>2006-10-02T07:59:43Z</Created>
+  <LastSaved>2023-12-07T00:23:23Z</LastSaved>
+  <Company>Mentor Graphics</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8964</WindowHeight>
+  <WindowWidth>17280</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>1896</WindowTopY>
+  <TabRatio>416</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s57">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s58">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="16" ss:Bold="1"
+    ss:Italic="1" ss:Underline="Single"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s59">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s60">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s61">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="LC3 TP">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="44" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="53.400000000000006"
+   ss:DefaultRowHeight="12">
+   <Column ss:StyleID="s57" ss:AutoFitWidth="0" ss:Width="68.399999999999991"/>
+   <Column ss:AutoFitWidth="0" ss:Width="159"/>
+   <Column ss:AutoFitWidth="0" ss:Width="246"/>
+   <Column ss:AutoFitWidth="0" ss:Width="237.6"/>
+   <Column ss:AutoFitWidth="0" ss:Width="81"/>
+   <Column ss:AutoFitWidth="0" ss:Width="62.400000000000006"/>
+   <Column ss:AutoFitWidth="0" ss:Width="45"/>
+   <Column ss:AutoFitWidth="0" ss:Width="81" ss:Span="1"/>
+   <Row ss:AutoFitHeight="0" ss:Height="22.05">
+    <Cell ss:StyleID="s58"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><U>TEST PLAN for lc3</U><I><U> </U></I></B></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.049999999999999"/>
+   <Row ss:AutoFitHeight="0" ss:Height="18">
+    <Cell ss:StyleID="s59"><Data ss:Type="String">#</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Section</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Link</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Weight</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Goal</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Owner</Data></Cell>
+    <Cell ss:StyleID="s60"><Data ss:Type="String">Priority</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="18">
+    <Cell ss:StyleID="s61"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Simulation </Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.799999999999997" ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Covergroup_1</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">PC Range</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Range of allowed PCs</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">inst_mem_transaction_cg::PC</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.6" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Instruction Memory Read</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Signal to start reading instruction from ICache</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">inst_mem_transaction_cg::instrmem_rd</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.3</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Instruction Data Out</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Instruction Complete</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">inst_mem_transaction_cg::complete_instr</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="19.2">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.4</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Arithmetic Operation</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ALU Operations</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::alu_opcode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.5</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Destination Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Destination Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::dest_reg</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.6</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register 1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::src1_reg</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.7</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Immediate Bit</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Immediate Bit</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::imm_bit</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="23.400000000000002" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.8</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register 2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register 2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::src2_reg</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="23.400000000000002" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.9</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Imm5</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Extended Opcode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">arithematic_operation::imm5_field</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.399999999999999" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.10</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Memory OpCode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Memory OpCode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">memory_operation::mem_opcode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.799999999999997" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.11</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Source Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">memory_operation::src_reg_mem</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.6" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.12</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Base Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Base Register</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">memory_operation::base_r_reg_mem</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.4" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.13</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Pc Offset_6</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Pc Offset 6 - Ldr and Str</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">memory_operation::pcOffset_6_reg_mem</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27.6" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.14</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Pc Offset_9</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Pc Offset 9 - Offset for Load and Store - Ldi and Sti</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">memory_operation::pcOffset_9_reg_mem</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="23.400000000000002" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.15</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Control OpCode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Branch and Jump instructions</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">control_operation::con_opcode</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.16</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">NZP</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Conditional branch instructions</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">control_operation::NZP_reg</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="25.8" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.17</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">PC Control 9</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Offset value to calculate PC next for branch</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">control_operation::pc_control_9</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="24.6" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">1.18</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Base R</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Direct Target address for branch</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">control_operation::base_r_control</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Covergroup_2</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="23.400000000000002" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2.1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Data_dout</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Value retrieved from data memory for Load</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">data_mem_transaction_cg::Data_dout</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="23.400000000000002" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2.2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Data_din</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Value for Stores from Register file to memory</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">data_mem_transaction_cg::Data_din</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2.3</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Data_rd</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Flag to enable read from data memory</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">data_mem_transaction_cg::Data_rd</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.799999999999997" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2.4</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Data_addr</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Address used to get the value from memory</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">data_mem_transaction_cg::Data_addr</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Coverpoint</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="21.599999999999998" ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">3</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Directed Tests</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39.6" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ALU Test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then all types of ALU instructions and introduces dependencies among them.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">alu_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Branch Test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then types of branch instructions and combining several other types of instructions and adding register dependencies.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">br_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.3</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Branch Store Test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then branch instructions with dependencies to or from all type of ST and ALU operations.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">br_st_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.4</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Branch Load Test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then branch instructions with dependencies to or from all type of LD and ALU operations.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">br_ld_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.5</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ld_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then load instructions with dependencies to and from all type of memory and ALU operations</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ld_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.6</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then by store(LD) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.7</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldrpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then by store(LDR) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldrpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.8</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">leapc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then by store(LEA) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">leapc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">3.9</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldipc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then by store(LDI) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ldipc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">3.10</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">st_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Loads the registers, then store instructions with dependencies to and from all type of memory and ALU operations</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">st_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">3.11</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">stpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then by store(ST) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">stpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">3.12</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">stipc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then store Immediate instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">stipc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">3.13</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">strpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Load the registers, then store(STR) instructions randomizing PC offsets.</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">strpc_test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="37.049999999999997" ss:StyleID="s64">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Code Coverage</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="40.050000000000004" ss:StyleID="s64">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">4.1</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Complete code coverage in LC3</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Code coverage should be as high as possible</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">/hdl_top/DUT</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Instance</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">group_9</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

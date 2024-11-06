@@ -1,0 +1,4 @@
+needs:
+  - data_mem_shared.compile
+  - data_mem_hvl.compile
+  - data_mem_hdl.compile

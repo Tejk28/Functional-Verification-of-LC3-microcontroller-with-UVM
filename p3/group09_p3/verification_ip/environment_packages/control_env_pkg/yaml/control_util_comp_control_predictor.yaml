@@ -1,0 +1,11 @@
+uvmf:
+  util_components:
+    control_predictor:
+      analysis_exports:
+      - name: analysis_export
+        type: control_in_transaction
+      analysis_ports:
+      - name: control_predictor_inst_ap
+        type: control_out_transaction
+      existing_library_component: 'True'
+      type: predictor

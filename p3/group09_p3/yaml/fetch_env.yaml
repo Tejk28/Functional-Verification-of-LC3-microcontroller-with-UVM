@@ -1,0 +1,39 @@
+uvmf:
+  environments:
+    "fetch" :
+      agents :
+        - name: "agent_i" 
+          type: "fetch_in"
+          initiator_responder: "INITIATOR"
+        - name: "agent_o"
+          type: "fetch_out"
+          initiator_responder: "RESPONDER"
+      analysis_components :
+        - name: "pred"
+          type: "fetch_predictor"
+      scoreboards : 
+        - name: "sb"
+          sb_type: "uvmf_in_order_race_scoreboard"
+          trans_type: "fetch_out_transaction"
+      tlm_connections :
+        - driver:   "agent_i.monitored_ap"
+          receiver: "pred.analysis_export"
+        - driver:   "pred.ap"
+          receiver: "sb.expected_analysis_export"
+        - driver:   "agent_o.monitored_ap"
+          receiver: "sb.actual_analysis_export"
+
+
+  util_components:
+          "fetch_predictor" :  
+            type: "predictor"
+            analysis_exports : 
+              - name: "analysis_export"
+                type: "fetch_in_transaction"
+            analysis_ports : 
+              - name: "ap"
+                type: "fetch_out_transaction"
+           
+        
+
+

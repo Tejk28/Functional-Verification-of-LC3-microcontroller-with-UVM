@@ -1,0 +1,4 @@
+needs:
+  - inst_mem_shared.compile
+  - inst_mem_hvl.compile
+  - inst_mem_hdl.compile

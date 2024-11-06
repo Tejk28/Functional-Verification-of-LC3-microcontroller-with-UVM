@@ -1,0 +1,29 @@
+uvmf:
+  interfaces:
+    "writeback_out":
+      clock: "clock"
+      reset: "reset"
+      reset_assertion_level: "True"
+      ports:
+        - name: "VSR1"
+          width: "16"
+          dir: "input"
+        - name: "VSR2"
+          width: "16"
+          dir: "input"
+        - name: "psr"
+          width: "3"
+          dir: "input"
+      transaction_vars:
+        - name: "VSR1"
+          type: "bit [15:0]"
+          isrand: "True"
+          iscompare: "False"
+        - name: "VSR2"
+          type: "bit [15:0]"
+          isrand: "True"
+          iscompare: "False"
+        - name: "psr"
+          type: "bit [2:0]"
+          isrand: "True"
+          iscompare: "False"
