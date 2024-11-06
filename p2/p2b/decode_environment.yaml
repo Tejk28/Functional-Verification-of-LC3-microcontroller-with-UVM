@@ -1,0 +1,46 @@
+uvmf:
+  util_components:
+    "decode_predictor":
+      type: "predictor"
+      analysis_exports:
+        - name: "analysis_export"
+          type: "decode_in_transaction"
+      analysis_ports:
+        - name: "scoreboard_ap"
+          type: "decode_out_transaction"
+  environments:
+    "decode":
+      agents:
+      - initiator_responder: "INITIATOR"
+        name: "d_in_agt"
+        type: "decode_in"
+      - initiator_responder: "RESPONDER"
+        name: "d_out_agt"
+        type: "decode_out"
+      analysis_components:
+      - name: "decode_pred"
+        parameters: []
+        type: "decode_predictor"
+      analysis_exports: []
+      analysis_ports: []
+      config_constraints: []
+      config_vars: []
+      hvl_pkg_parameters: []
+      non_uvmf_components: []
+      parameters: []
+      qvip_memory_agents: []
+      scoreboards: 
+      - name: "decode_sb"
+        sb_type: "uvmf_in_order_scoreboard"
+        trans_type: "decode_out_transaction"
+      tlm_connections:
+      - driver: "d_in_agt.monitored_ap"
+        receiver: "decode_pred.analysis_export"
+      - driver: "decode_pred.scoreboard_ap"
+        receiver: "decode_sb.expected_analysis_export"
+      - driver: "d_out_agt.monitored_ap"
+        receiver: "decode_sb.actual_analysis_export"
+      imp_decls:
+      - name: "_expected"
+      - name: "_actual"
+ 

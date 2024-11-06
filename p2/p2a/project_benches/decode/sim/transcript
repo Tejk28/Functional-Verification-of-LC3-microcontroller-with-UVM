@@ -1,0 +1,547 @@
+# //  Questa Sim
+# //  Version 2023.2_1 linux May 12 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -i -sv_seed 1 "+UVM_TESTNAME=test_top" -permit_unmatched_virtual_intf "+notimingchecks" -suppress 8887 -solvefaildebug -solvefailtestcase -assertdebug -uvmcontrol=all "+uvm_set_config_int=*,enable_transaction_viewing,1" -classdebug -msgmode tran -do " set NoQuitOnFinish 1; run 0; do wave.do " optimized_debug_top_tb 
+# Start time: 14:36:18 on Oct 29,2023
+# Loading sv_std.std
+# Loading work.decode_out_driver_bfm(fast)
+# Loading work.decode_out_monitor_bfm(fast)
+# Loading work.uvmf_base_pkg_hdl(fast)
+# Loading work.decode_out_pkg_hdl(fast)
+# Loading work.decode_in_driver_bfm(fast)
+# Loading work.decode_in_monitor_bfm(fast)
+# Loading work.decode_in_if(fast)
+# Loading work.decode_out_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.uvmf_base_pkg(fast)
+# Loading work.decode_out_pkg(fast)
+# Loading work.decode_in_pkg_hdl(fast)
+# Loading work.decode_in_pkg(fast)
+# Loading work.decode_env_pkg(fast)
+# Loading work.decode_test_pkg(fast)
+# Loading work.hvl_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.hvl_top(fast)
+# Loading work.hdl_top_sv_unit(fast)
+# Loading work.hdl_top(fast)
+# Loading work.decode_in_if_sv_unit(fast)
+# Loading work.decode_in_if(fast__1)
+# Loading work.decode_out_if_sv_unit(fast)
+# Loading work.decode_out_if(fast__1)
+# Loading work.Decode(fast)
+# Loading work.decode_in_driver_bfm_sv_unit(fast)
+# Loading work.decode_in_driver_bfm(fast__1)
+# Loading work.decode_in_monitor_bfm_sv_unit(fast)
+# Loading work.decode_in_monitor_bfm(fast__1)
+# Loading work.decode_out_driver_bfm_sv_unit(fast)
+# Loading work.decode_out_driver_bfm(fast__1)
+# Loading work.decode_out_monitor_bfm_sv_unit(fast)
+# Loading work.decode_out_monitor_bfm(fast__1)
+# Loading /mnt/apps/public/COE/mg_apps/questa2023.2/questasim/uvm-1.1d/linux/uvm_dpi.so
+#  set NoQuitOnFinish 1
+# 1
+#  run 0
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# ----------------------------------------------------------------
+# //  UVM Framework 
+# //  Version 2022.3
+# //  (C) 2013-2022 Siemens Corporation
+# //  Digital Industries Software
+# //  Siemens EDA
+# //  All Rights Reserved.
+# ----------------------------------------------------------------
+# 
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
+# UVM_INFO @ 0: reporter [RNTST] Running test test_top...
+# UVM_INFO @ 0: reporter [UVM_CMDLINE_PROC] Applying config setting from the command line: +uvm_set_config_int=*,enable_transaction_viewing,1
+# UVM_INFO @ 0: uvm_test_top [TEST_TOP] INFO: Build Phase Completed Successfully
+# **************************************************************************
+# * Questa UVM Transaction Recording Turned ON.                            *
+# * recording_detail has been set.                                         *
+# *  To turn off, set 'recording_detail' to off:                           *
+# * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
+# * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
+# **************************************************************************
+#  do wave.do 
+run -all
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 10: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x0 sr1:0x0 sr2:0x0 dr:0x0 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x5e69 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 10: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5e69 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 10: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5e69 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @828 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 30: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5e69 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @841 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 30: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 30: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x1 sr2:0x0 dr:0x7 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x09 n:0x0 z:0x0 p:0x0 instruction:0x5206 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 30: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5206 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 30: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5206 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @849 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 50: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5206 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @861 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 50: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 50: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x0 sr2:0x6 dr:0x1 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x5085 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 50: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5085 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 50: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5085 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @869 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 70: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5085 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @881 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 70: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 70: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x2 sr2:0x5 dr:0x0 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x1d80 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 70: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1d80 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 70: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1d80 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @889 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 90: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1d80 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @901 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 90: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 90: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x6 sr2:0x0 dr:0x6 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0xea70 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 90: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xea70 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 90: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xea70 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @909 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 110: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xea70 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @921 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 110: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 110: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0xe sr1:0x0 sr2:0x0 dr:0x5 baser:0x0 pcoffset9:0x070 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x563a 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 110: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x563a 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 110: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x563a 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @929 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 130: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x563a 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @941 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 130: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 130: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x0 sr2:0x0 dr:0x3 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x1a n:0x0 z:0x0 p:0x0 instruction:0x5d3f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 130: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5d3f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 130: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5d3f 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @949 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 150: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5d3f 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @961 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 150: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 150: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x4 sr2:0x0 dr:0x6 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x1f n:0x0 z:0x0 p:0x0 instruction:0xe16a 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 150: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe16a 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 150: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe16a 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @969 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 170: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe16a 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @981 
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 170: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 170: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0xe sr1:0x0 sr2:0x0 dr:0x0 baser:0x0 pcoffset9:0x16a pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0xe36e 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 170: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe36e 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 170: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe36e 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @989 
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 190: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe36e 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1001
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 190: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 190: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0xe sr1:0x0 sr2:0x0 dr:0x1 baser:0x0 pcoffset9:0x16e pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x1825 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 190: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1825 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 190: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1825 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1009
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 210: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1825 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1021
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 210: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 210: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x0 sr2:0x0 dr:0x4 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x05 n:0x0 z:0x0 p:0x0 instruction:0x9c3f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 210: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9c3f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 210: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9c3f 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1029
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 230: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9c3f 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1041
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 230: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 230: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x9 sr1:0x0 sr2:0x0 dr:0x6 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x5044 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 230: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5044 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 230: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5044 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1049
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 250: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5044 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1061
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 250: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 250: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x1 sr2:0x4 dr:0x0 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x1680 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 250: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1680 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 250: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1680 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1069
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 270: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x01 IR:0x1680 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1081
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 270: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 270: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x2 sr2:0x0 dr:0x3 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x1ef8 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 270: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1ef8 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 270: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1ef8 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1089
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 290: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1ef8 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1101
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 290: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 290: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x3 sr2:0x0 dr:0x7 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x18 n:0x0 z:0x0 p:0x0 instruction:0x5467 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 290: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5467 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 290: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5467 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1109
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 310: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x10 IR:0x5467 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1121
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 310: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 310: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x1 sr2:0x0 dr:0x2 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x07 n:0x0 z:0x0 p:0x0 instruction:0x9dff 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 310: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9dff 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 310: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9dff 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1129
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 330: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x9dff 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1141
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 330: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 330: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x9 sr1:0x7 sr2:0x0 dr:0x6 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0xe8e1 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 330: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe8e1 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 330: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe8e1 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1149
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 350: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xe8e1 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1161
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 350: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 350: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0xe sr1:0x0 sr2:0x0 dr:0x4 baser:0x0 pcoffset9:0x0e1 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x5146 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 350: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5146 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 350: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5146 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1169
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 370: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5146 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1181
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 370: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 370: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x5 sr2:0x6 dr:0x0 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x1eea 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 370: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1eea 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 370: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1eea 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1189
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 390: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x1eea 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1201
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 390: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 390: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x3 sr2:0x0 dr:0x7 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x0a n:0x0 z:0x0 p:0x0 instruction:0x97ff 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 390: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x97ff 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 390: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x97ff 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1209
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 410: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x97ff 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1221
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 410: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 410: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x9 sr1:0x7 sr2:0x0 dr:0x3 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x947f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 410: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x947f 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 410: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x947f 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1229
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 430: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x20 IR:0x947f 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1241
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 430: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 430: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x9 sr1:0x1 sr2:0x0 dr:0x2 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x5004 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 430: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5004 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 430: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5004 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1249
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 450: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x5004 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1261
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 450: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 450: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x5 sr1:0x0 sr2:0x4 dr:0x0 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0xefd8 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 450: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xefd8 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 450: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xefd8 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1269
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 470: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x2 E_Control:0x06 IR:0xefd8 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1281
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 470: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 470: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0xe sr1:0x0 sr2:0x0 dr:0x7 baser:0x0 pcoffset9:0x1d8 pcoffset6:0x00 imm5:0x00 n:0x0 z:0x0 p:0x0 instruction:0x19a3 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 470: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x19a3 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 470: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x19a3 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1289
+# -----------------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 490: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x00 IR:0x19a3 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1301
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 490: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(21) @ 490: uvm_test_top.env_inst.decode_pred [PRED] DECODE_IN  DATA:opcode:0x1 sr1:0x6 sr2:0x0 dr:0x4 baser:0x0 pcoffset9:0x000 pcoffset6:0x00 imm5:0x03 n:0x0 z:0x0 p:0x0 instruction:0x56c5 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_predictor.svh(36) @ 490: uvm_test_top.env_inst.decode_pred [PRED] DECODE_OUT DATA:npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x56c5 
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(46) @ 490: uvm_test_top.env_inst.decode_sb [SCBD] Expected transaction pushed into queue
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x56c5 
+# -----------------------------------------------------
+# Name              Type                    Size  Value
+# -----------------------------------------------------
+# decode_out_trans  decode_out_transaction  -     @1309
+# -----------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 510: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(59) @ 510: uvm_test_top.env_inst.decode_sb [SCBD] Actual transaction 
+# npc_out:0x3000 Mem_Control:0x0 W_Control:0x0 E_Control:0x11 IR:0x56c5 
+# ------------------------------------------
+# Name   Type                    Size  Value
+# ------------------------------------------
+# trans  decode_out_transaction  -     @1317
+# ------------------------------------------
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(64) @ 510: uvm_test_top.env_inst.decode_sb [SCBD] MATCH
+# UVM_INFO /mnt/ncsudrive/t/tkulkar/ECE748/tkulkar_p2a/project_benches/decode/sim/../../../verification_ip/environment_packages/decode_env_pkg/src/decode_scoreboard.svh(92) @ 510: uvm_test_top.env_inst.decode_sb [SCBD] SCOREBOARD REPORT: , PREDICTED_TRANSACTIONS=25, Nothing to Compare count=0, MATCH = 25, MISMATCH= 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  132
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [PRED]    50
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCBD]    76
+# [TEST_DONE]     1
+# [TEST_TOP]     1
+# [UVM_CMDLINE_PROC]     1
+# ** Note: $finish    : /mnt/apps/public/COE/mg_apps/questa2023.2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 510 ns  Iteration: 61  Instance: /hvl_top
+# Break in Task uvm_pkg/uvm_root::run_test at /mnt/apps/public/COE/mg_apps/questa2023.2/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do wave.do
+# End time: 14:49:12 on Oct 29,2023, Elapsed time: 0:12:54
+# Errors: 0, Warnings: 0

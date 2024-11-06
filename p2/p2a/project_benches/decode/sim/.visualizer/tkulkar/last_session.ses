@@ -1,0 +1,55 @@
+<!-- THIS IS TOOL GENERATED SESSION FILE. PLEASE DO NOT MODIFY THIS -->
+<!DOCTYPE visualizer_session>
+<session skip_do_file="0" version="3">
+ <app argc="3">
+  <argv pos="0" value="visualizer"/>
+  <argv pos="1" value="-viewcov"/>
+  <argv pos="2" value="test_top.ucdb"/>
+ </app>
+ <window_config>
+  <dockareas right="457" left="914" top="0" bottom="468"/>
+  <taborder left="structure+" bottom="transcript+coveragesummary+"/>
+  <activetab activewindow="coveragesummary" left="structure" bottom="coveragesummary"/>
+  <window width="1327" type="structure" visible="1" undocked="0" height="806" y="0" dock_location="left" x="0"/>
+  <window width="1327" type="transcript" visible="1" undocked="0" height="806" y="0" dock_location="bottom" x="0"/>
+  <window width="1920" type="coveragesummary" visible="1" undocked="0" height="1002" y="25" dock_location="bottom" x="0"/>
+  <window width="1829" type="rtl" visible="1" undocked="0" height="936" y="50" x="50"/>
+  <window type="testbench" visible="0" undocked="0" y="0" dock_location="left" x="0"/>
+  <window width="1633" type="files" visible="0" undocked="0" height="806" y="0" dock_location="left" x="0"/>
+  <window width="1920" type="wave" visible="0" undocked="1" height="1002" y="33" dock_location="bottom" x="8"/>
+  <window type="source" visible="0" undocked="0" path="/mnt/ncsudrive/t/tkulkar/ECE748/proj1/project_benches/decode/tb/testbench/hdl_top.sv" y="0" dock_location="center" x="0" firstVisibleLine="3"/>
+  <window type="source" visible="0" undocked="0" path="/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/verilog_src/uvm-1.1d/src/base/uvm_root.svh" y="0" dock_location="center" x="0" firstVisibleLine="418" id="1"/>
+  <window type="source" visible="1" undocked="0" path="/mnt/ncsudrive/t/tkulkar/ECE748/proj1/project_benches/decode/tb/testbench/hvl_top.sv" y="0" dock_location="center" x="0" firstVisibleLine="0" id="2"/>
+ </window_config>
+ <wave_file_mgr/>
+ <gui>
+  <main_window visible="1">
+   <srcbrowser filepath="/mnt/ncsudrive/t/tkulkar/ECE748/proj1/project_benches/decode/tb/testbench/hdl_top.sv"/>
+   <sourcetclcommands>
+    <tcl command="src activate source"/>
+    <tcl command="src top 4"/>
+   </sourcetclcommands>
+   <srcbrowser filepath="/mnt/apps/public/COE/mg_apps/questa2023.2_2/questasim/verilog_src/uvm-1.1d/src/base/uvm_root.svh"/>
+   <sourcetclcommands>
+    <tcl command="src activate source1"/>
+    <tcl command="src top 419"/>
+   </sourcetclcommands>
+   <srcbrowser instancename="hvl_top" primary="true" filepath="/mnt/ncsudrive/t/tkulkar/ECE748/proj1/project_benches/decode/tb/testbench/hvl_top.sv"/>
+   <sourcetclcommands>
+    <tcl command="src activate source2"/>
+    <tcl command="src top 1"/>
+   </sourcetclcommands>
+   <edge_gui cur_selection="AnyEdge"/>
+  </main_window>
+  <watchTower_cur_setting curRadix="8" curDisplayTimeUnit="-9" curDisplayTimeUnitStr="1ns" customDisplayTimeUnitListStr="">
+   <curTime lowtime="0" hightime="0"/>
+  </watchTower_cur_setting>
+  <structure selection="hvl_top"/>
+  <transcript/>
+  <coveragesummary/>
+ </gui>
+ <wave_mgr sync_time_range="0"/>
+ <mem_mgr/>
+ <windows/>
+ <dut selection="hvl_top"/>
+</session>
